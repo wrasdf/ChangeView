@@ -75,7 +75,7 @@
             }
             break;
         case 0: {
-            [self transitionFromViewController:secondView toViewController:firstView duration:1 options:UIViewAnimationOptionTransitionFlipFromTop animations:^{
+            [self transitionFromViewController:secondView toViewController:firstView duration:1 options:UIViewAnimationOptionTransitionFlipFromBottom animations:^{
             }completion:^(BOOL finished) {
 //                if (finished) {
 //                    animationViewWrapper = secondView;
@@ -85,20 +85,6 @@
             }];
         }
             break;
-//        case 3:
-//        {
-//            NSLog(@"好友申请");
-//            [self transitionFromViewController:animationViewWrapper toViewController:thirdViewController duration:1 options:UIViewAnimationOptionTransitionFlipFromBottom animations:^{
-//
-//            }  completion:^(BOOL finished) {
-//                if (finished) {
-//                    animationViewWrapper=thirdViewController;
-//                }else{
-//                    animationViewWrapper=oldViewController;
-//                }
-//            }];
-//        }
-//            break;
         default:
             break;
     }
